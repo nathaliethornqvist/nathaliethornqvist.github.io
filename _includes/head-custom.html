@@ -29,16 +29,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
      document.addEventListener("DOMContentLoaded", () => {
 
-        const readArticle1Button = document.getElementById("read-article-1");
+        const readArticle1Button = document.getElementById("article1");
     
         if(readArticle1Button) {
 
             readArticle1Button.addEventListener("click", () => {
-            sendInfoEvent("Nathalie", 9)
+            sendInfoEvent(lastid < 10)
              });
 
-            document.getElementById("read-article-2").addEventListener("click", () => {
-            sendInfoEvent("Nathalies", 20)
+            document.getElementById("article2").addEventListener("click", () => {
+            sendInfoEvent(lastid > 15)
             });
         }
 
